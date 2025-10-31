@@ -1,204 +1,122 @@
-<div align="center">
+# Shop Feedback Hub
 
-# 🏪 Shop Feedback Hub
+### A store rating platform that actually makes sense
 
-### A Modern Full-Stack Store Rating & Management Platform
+So you need a way to manage store ratings? We've got you covered. This is a full-stack app that makes collecting and managing store feedback actually enjoyable (yes, really!).
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Node.js](https://img.shields.io/badge/Node.js-v14+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
-[![Express](https://img.shields.io/badge/Express-4.18-000000?logo=express&logoColor=white)](https://expressjs.com/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
-
-[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [API Documentation](#-api-documentation) • [Contributing](#-contributing)
-
-</div>
 
 ---
 
-## 📋 Table of Contents
+## What's This All About?
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Screenshots](#-screenshots)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Usage](#-usage)
-- [API Documentation](#-api-documentation)
-- [Database Schema](#-database-schema)
-- [Security](#-security)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
+**Shop Feedback Hub** is basically like having a super-organized assistant who keeps track of all your store ratings, manages users, and makes everyone's life easier. Whether you're running the whole show as an admin, owning a store, or just browsing to rate your favorite shops - we've got something for you.
+
+### Why Should You Care?
+
+Look, I could bore you with technical jargon, but here's what really matters:
+
+- **It looks good** - No ugly 90s-style forms here. We've made it clean and modern
+- **It's secure** - Your passwords are hashed, your data is protected. We take this seriously
+- **Everyone gets their own space** - Admins do admin things, store owners see their metrics, users rate stores. No confusion
+- **It actually works on your phone** - Because who even uses just desktop anymore?
+- **It's fast** - Nobody has time to wait around for pages to load
 
 ---
 
-## 🎯 Overview
+## What Can You Do With It?
 
-**Shop Feedback Hub** is a comprehensive full-stack web application designed to manage store ratings with role-based access control. Built with modern technologies, it provides a seamless experience for administrators, store owners, and customers to interact with store feedback data.
+### If You're an Admin
 
-### Why Shop Feedback Hub?
+You're basically the puppet master here:
 
-- 🎨 **Modern UI/UX** - Beautiful, responsive design with smooth animations
-- 🔐 **Secure Authentication** - JWT-based authentication with bcrypt password hashing
-- 👥 **Role-Based Access** - Three distinct user roles with specific permissions
-- 📊 **Real-Time Analytics** - Dashboard with live statistics and insights
-- ⚡ **Fast & Scalable** - Optimized performance with efficient database queries
-- 📱 **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile
+- Create and manage user accounts (both regular users and store owners)
+- Add new stores to the platform
+- See everything happening in real-time with the dashboard
+- Search and filter through users and stores like a pro
+- Keep track of how many ratings are rolling in
 
----
+### If You're a Regular User
 
-## ✨ Features
+Here's your playground:
 
-### 🔑 For System Administrators
+- Sign up and create your own account (we'll guide you through it)
+- Browse through all the stores in the system
+- Give ratings from 1 to 5 stars - be honest!
+- Change your mind? Update your ratings anytime
+- See which stores you've already rated
+- Keep your password secure with easy updates
 
-<details>
-<summary>Click to expand</summary>
+### If You Own a Store
 
-- **User Management**
-  - Create admin and normal user accounts
-  - View, filter, and sort all users
-  - Search by name, email, address, and role
-  - View detailed user profiles
+Your personal analytics dashboard:
 
-- **Store Management**
-  - Add new stores with owner accounts
-  - View all stores with ratings
-  - Filter and sort stores by various criteria
-  - Monitor store performance
-
-- **Analytics Dashboard**
-  - Total users count
-  - Total stores count
-  - Total ratings submitted
-  - Real-time statistics
-
-</details>
-
-### 👤 For Normal Users
-
-<details>
-<summary>Click to expand</summary>
-
-- **Account Features**
-  - Self-registration with validation
-  - Secure login/logout
-  - Password update functionality
-
-- **Store Interaction**
-  - Browse all registered stores
-  - Search stores by name and address
-  - View overall store ratings
-  - Submit ratings (1-5 stars)
-  - Update previously submitted ratings
-  - View personal rating history
-
-</details>
-
-### 🏬 For Store Owners
-
-<details>
-<summary>Click to expand</summary>
-
-- **Store Dashboard**
-  - View average store rating
-  - See rating distribution (1-5 stars)
-  - Monitor total ratings count
-  - Track performance metrics
-
-- **Customer Insights**
-  - View users who rated the store
-  - See individual ratings and feedback
-  - Sort and filter customer data
-  - Export rating information
-
-</details>
+- See your average rating at a glance
+- Check out how many 1-star vs 5-star ratings you're getting
+- View everyone who's rated your store
+- Sort through customer feedback however you want
+- Track your performance over time
 
 ---
 
-## 🛠 Tech Stack
+## What We Built This With
 
-### Backend
-```
-Express.js      - Web application framework
-Node.js         - JavaScript runtime
-MySQL           - Relational database
-JWT             - Authentication tokens
-bcrypt          - Password hashing
-express-validator - Input validation
-```
+We didn't reinvent the wheel, just used the good stuff:
 
-### Frontend
-```
-React 18        - UI library
-React Router    - Client-side routing
-Axios           - HTTP client
-Context API     - State management
-CSS3            - Styling with animations
-```
+**Backend:**
+- Express.js and Node.js (for the server)
+- MySQL (storing all the data)
+- JWT (keeping things secure)
+- bcrypt (so passwords stay safe)
 
-### Database
-```
-MySQL 8.0       - Primary database
-SQL             - Query language
-```
+**Frontend:**
+- React 18 (because it's 2024)
+- React Router (for navigation)
+- Plain CSS3 (keeping it simple)
 
 ---
 
-## 📸 Screenshots
+## Getting Started
 
-### Login Page
-![Login Page](https://via.placeholder.com/800x400/667eea/ffffff?text=Modern+Login+Page)
+Alright, let's get you up and running. Don't worry, it's easier than it looks.
 
-### Admin Dashboard
-![Admin Dashboard](https://via.placeholder.com/800x400/667eea/ffffff?text=Admin+Dashboard+with+Statistics)
+### What You'll Need First
 
-### User Store Browser
-![Store Browser](https://via.placeholder.com/800x400/667eea/ffffff?text=Browse+and+Rate+Stores)
+Make sure you've got these installed:
 
-### Store Owner Analytics
-![Store Analytics](https://via.placeholder.com/800x400/667eea/ffffff?text=Store+Owner+Dashboard)
+- Node.js (version 14 or newer)
+- MySQL (version 8.0 or newer)
+- npm (comes with Node.js)
+- Git
 
----
+### Setting It Up
 
-## 🚀 Installation
-
-### Prerequisites
-
-Ensure you have the following installed:
-
-- **Node.js** (v14 or higher) - [Download](https://nodejs.org/)
-- **MySQL** (v8.0 or higher) - [Download](https://dev.mysql.com/downloads/mysql/)
-- **npm** (comes with Node.js)
-- **Git** - [Download](https://git-scm.com/)
-
-### Quick Start
-
-#### 1. Clone the Repository
+**Step 1: Get the code**
 
 ```bash
 git clone https://github.com/akshatsoni123/Shop-Feedback-Hub.git
 cd Shop-Feedback-Hub
 ```
 
-#### 2. Install Dependencies
+**Step 2: Install everything**
 
-**Backend:**
+For the backend:
 ```bash
 npm install
 ```
 
-**Frontend:**
+For the frontend:
 ```bash
 cd frontend
 npm install
 cd ..
 ```
 
-#### 3. Database Setup
+**Step 3: Set up your database**
 
-**Option A: Using MySQL Command Line**
+If you're comfortable with MySQL command line:
 ```bash
 mysql -u root -p
 ```
@@ -208,123 +126,122 @@ source database/schema.sql
 exit
 ```
 
-**Option B: Using phpMyAdmin (XAMPP)**
-1. Open phpMyAdmin
-2. Go to Import tab
-3. Select `database/schema.sql`
-4. Click "Go"
+Or if you prefer phpMyAdmin (like with XAMPP):
+1. Open phpMyAdmin in your browser
+2. Click the Import tab
+3. Choose the `database/schema.sql` file
+4. Hit Go and you're done
 
-#### 4. Environment Configuration
+**Step 4: Configure your environment**
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the root folder:
 
 ```bash
 cp .env.example .env
 ```
 
-Edit `.env` with your configuration:
+Then edit it with your details:
 
 ```env
-# Server Configuration
 PORT=5000
 NODE_ENV=development
 
-# Database Configuration
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_mysql_password
 DB_NAME=store_rating_db
-DB_PORT=3306
 
-# JWT Configuration
-JWT_SECRET=your_super_secret_jwt_key_change_this
+JWT_SECRET=make_this_something_random_and_long
 JWT_EXPIRE=24h
 
-# Frontend URL
 CLIENT_URL=http://localhost:3000
 ```
 
-#### 5. Start the Application
+**Step 5: Fire it up**
 
-**Terminal 1 - Backend:**
+Open two terminal windows.
+
+In the first one (backend):
 ```bash
 npm run dev
 ```
 
-**Terminal 2 - Frontend:**
+In the second one (frontend):
 ```bash
 cd frontend
 npm start
 ```
 
-The application will open at **http://localhost:3000**
+Your browser should automatically open to `http://localhost:3000`. If it doesn't, just go there manually.
 
 ---
 
-## ⚙️ Configuration
+## Your First Login
 
-### Default Admin Credentials
+Here are the default admin credentials:
 
 ```
 Email: admin@system.com
 Password: Admin@123
 ```
 
-⚠️ **IMPORTANT**: Change these credentials immediately after first login in production!
-
-### Form Validation Rules
-
-| Field | Rules |
-|-------|-------|
-| **Name** | Min: 20 chars, Max: 60 chars |
-| **Email** | Valid email format |
-| **Password** | 8-16 chars, 1 uppercase, 1 special character |
-| **Address** | Max: 400 characters |
+**Important:** Seriously, change these right after you log in for the first time. We're trusting you here.
 
 ---
 
-## 📖 Usage
+## The Rules (Validation)
 
-### For Administrators
+We've got some requirements to keep things clean:
 
-1. **Login** with admin credentials
-2. Navigate to **Dashboard** to view statistics
-3. Use **Add User** to create new accounts
-4. Use **Add Store** to register new stores
-5. Manage users and stores from respective sections
+- **Names:** Between 20 and 60 characters (yeah, we need full names)
+- **Emails:** Has to be a real email format
+- **Passwords:** 8-16 characters, at least one uppercase letter and one special character
+- **Addresses:** Up to 400 characters
 
-### For Normal Users
+---
 
-1. **Register** a new account
-2. **Login** with your credentials
-3. **Browse stores** from the dashboard
-4. **Submit ratings** by clicking "Rate Store"
-5. **Update ratings** anytime by clicking "Update Rating"
+## How to Use It
+
+### For Admins
+
+1. Log in with your admin account
+2. Head to the Dashboard to see what's happening
+3. Click "Add User" to create new accounts
+4. Click "Add Store" to register new stores
+5. Use the user and store management pages to keep things organized
+
+### For Regular Users
+
+1. Register for an account (it takes like 30 seconds)
+2. Log in with your new credentials
+3. Browse the stores from your dashboard
+4. Click "Rate Store" to give your feedback
+5. Want to change your rating? Just click "Update Rating"
 
 ### For Store Owners
 
-1. **Login** with provided credentials
-2. View your **store dashboard**
-3. Check **rating distribution**
-4. See **customer feedback**
-5. Monitor **performance metrics**
+1. Log in with the credentials the admin gave you
+2. Check out your dashboard - all your stats are right there
+3. See how customers are rating you
+4. View who's giving you those ratings
+5. Keep an eye on your performance
 
 ---
 
-## 🔌 API Documentation
+## API Reference
 
-### Base URL
-```
-http://localhost:5000/api
-```
+If you're integrating with our API or just curious, here's what you need to know.
 
-### Authentication Endpoints
+**Base URL:** `http://localhost:5000/api`
 
-#### Register User
+### Authentication Stuff
+
+**Register a new user:**
 ```http
 POST /auth/register
-Content-Type: application/json
-
+```
+Send this in the body:
+```json
 {
   "name": "John Doe Smith Anderson",
   "email": "john@example.com",
@@ -333,45 +250,31 @@ Content-Type: application/json
 }
 ```
 
-#### Login
+**Login:**
 ```http
 POST /auth/login
-Content-Type: application/json
-
+```
+```json
 {
   "email": "john@example.com",
   "password": "Password@123"
 }
 ```
 
-**Response:**
-```json
-{
-  "success": true,
-  "data": {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-    "user": {
-      "id": 1,
-      "name": "John Doe",
-      "email": "john@example.com",
-      "role": "user"
-    }
-  }
-}
-```
+You'll get back a token - keep that safe, you'll need it for authenticated requests.
 
-#### Get Profile
+**Get your profile:**
 ```http
 GET /auth/profile
-Authorization: Bearer {token}
+Authorization: Bearer your_token_here
 ```
 
-#### Update Password
+**Change your password:**
 ```http
 PUT /auth/update-password
-Authorization: Bearer {token}
-Content-Type: application/json
-
+Authorization: Bearer your_token_here
+```
+```json
 {
   "currentPassword": "OldPassword@123",
   "newPassword": "NewPassword@123"
@@ -380,72 +283,53 @@ Content-Type: application/json
 
 ### Admin Endpoints
 
-All admin endpoints require `Authorization: Bearer {admin_token}`
+All of these need an admin token in the Authorization header.
 
-#### Dashboard Statistics
+**Dashboard stats:**
 ```http
 GET /admin/dashboard/stats
 ```
 
-#### Create User
+**Create a user:**
 ```http
 POST /admin/users
-Content-Type: application/json
-
-{
-  "name": "Jane Doe Smith Wilson",
-  "email": "jane@example.com",
-  "password": "Password@123",
-  "address": "456 Oak Avenue",
-  "role": "user"
-}
 ```
 
-#### Get All Users
+**Get all users (with optional filters):**
 ```http
 GET /admin/users?name=john&role=user&sortBy=name&sortOrder=ASC
 ```
 
-#### Create Store
+**Add a store:**
 ```http
 POST /admin/stores
-Content-Type: application/json
-
-{
-  "ownerName": "Store Owner Full Name Here",
-  "ownerEmail": "owner@example.com",
-  "ownerPassword": "Password@123",
-  "storeName": "Amazing Electronics Store Name",
-  "storeEmail": "store@example.com",
-  "address": "789 Store Street, City"
-}
 ```
 
 ### User Endpoints
 
-All user endpoints require `Authorization: Bearer {user_token}`
+Need a user token for these.
 
-#### Get Stores
+**See all stores:**
 ```http
 GET /user/stores?name=electronics&sortBy=average_rating&sortOrder=DESC
 ```
 
-#### Submit Rating
+**Rate a store:**
 ```http
 POST /user/ratings
-Content-Type: application/json
-
+```
+```json
 {
   "store_id": 1,
   "rating": 5
 }
 ```
 
-#### Update Rating
+**Update your rating:**
 ```http
 PUT /user/ratings
-Content-Type: application/json
-
+```
+```json
 {
   "store_id": 1,
   "rating": 4
@@ -454,329 +338,72 @@ Content-Type: application/json
 
 ### Store Owner Endpoints
 
-All store owner endpoints require `Authorization: Bearer {store_owner_token}`
+Need a store owner token.
 
-#### Get Dashboard Stats
+**Your dashboard stats:**
 ```http
 GET /store-owner/dashboard/stats
 ```
 
-#### Get Rating Users
+**See who rated you:**
 ```http
 GET /store-owner/ratings/users?sortBy=rating&sortOrder=DESC
 ```
 
 ---
 
-## 🗄️ Database Schema
+## How the Database Works
 
-### Tables
+We've got three main tables:
 
-#### Users Table
-```sql
-users (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(60) NOT NULL,
-  email VARCHAR(255) UNIQUE NOT NULL,
-  password VARCHAR(255) NOT NULL,
-  address VARCHAR(400),
-  role ENUM('admin', 'user', 'store_owner'),
-  created_at TIMESTAMP,
-  updated_at TIMESTAMP
-)
-```
+**Users** - Stores everyone (admins, regular users, and store owners)
+**Stores** - All the stores in the system
+**Ratings** - Links users to stores with their ratings
 
-#### Stores Table
-```sql
-stores (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  owner_id INT NOT NULL,
-  name VARCHAR(60) NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  address VARCHAR(400),
-  created_at TIMESTAMP,
-  updated_at TIMESTAMP,
-  FOREIGN KEY (owner_id) REFERENCES users(id)
-)
-```
-
-#### Ratings Table
-```sql
-ratings (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  user_id INT NOT NULL,
-  store_id INT NOT NULL,
-  rating INT CHECK (rating >= 1 AND rating <= 5),
-  created_at TIMESTAMP,
-  updated_at TIMESTAMP,
-  UNIQUE (user_id, store_id),
-  FOREIGN KEY (user_id) REFERENCES users(id),
-  FOREIGN KEY (store_id) REFERENCES stores(id)
-)
-```
-
-### Relationships
-
-- One User (Store Owner) → Many Stores
-- Many Users ↔ Many Stores (through Ratings)
-- Each User can rate each Store only once
+The relationships are pretty straightforward:
+- One store owner can have multiple stores
+- Users can rate multiple stores
+- Each user can only rate each store once (no spam!)
 
 ---
 
-## 🔒 Security
+## Security
 
-### Implemented Security Measures
+We take security seriously, but we're not paranoid. Here's what we do:
 
-- ✅ **Password Hashing** - bcrypt with salt rounds (10)
-- ✅ **JWT Authentication** - Secure token-based auth
-- ✅ **SQL Injection Prevention** - Parameterized queries
-- ✅ **Input Validation** - Frontend & Backend validation
-- ✅ **Role-Based Access Control** - Protected routes by role
-- ✅ **CORS Configuration** - Restricted origins
-- ✅ **Environment Variables** - Sensitive data protection
-- ✅ **Password Requirements** - Strong password policy
+- Passwords are hashed with bcrypt (so we literally can't see your password)
+- JWT tokens for authentication (industry standard)
+- All database queries use parameterization (no SQL injection here)
+- Input validation on both frontend and backend
+- Role-based access control (you only see what you're supposed to)
 
-### Security Best Practices
-
-1. **Change default admin password** immediately
-2. **Use strong JWT_SECRET** in production
-3. **Enable HTTPS** in production
-4. **Regular security updates** for dependencies
-5. **Database backups** regularly
-6. **Monitor logs** for suspicious activity
+**A few tips:**
+- Change that default admin password immediately
+- Use a strong, random JWT_SECRET in production
+- Enable HTTPS when you go live
+- Keep your dependencies updated
+- Back up your database regularly
 
 ---
 
-## 📁 Project Structure
+## Project Structure
+
+Here's where everything lives:
 
 ```
 Shop-Feedback-Hub/
-├── backend/
-│   ├── config/
-│   │   └── database.js           # Database connection
-│   ├── controllers/
-│   │   ├── adminController.js    # Admin logic
-│   │   ├── authController.js     # Authentication logic
-│   │   ├── storeOwnerController.js
-│   │   └── userController.js     # User logic
-│   ├── middleware/
-│   │   ├── auth.js               # JWT authentication
-│   │   └── validation.js         # Input validation
-│   ├── routes/
-│   │   ├── adminRoutes.js        # Admin routes
-│   │   ├── authRoutes.js         # Auth routes
-│   │   ├── storeOwnerRoutes.js   # Store owner routes
-│   │   └── userRoutes.js         # User routes
-│   ├── utils/
-│   │   └── generateHash.js       # Password hash generator
-│   └── server.js                 # Express server
-├── database/
-│   ├── schema.sql                # Database schema
-│   └── seed_data.sql             # Sample data (optional)
-├── frontend/
-│   ├── public/
-│   │   └── index.html
+├── backend/              (All server-side code)
+│   ├── config/          (Database setup)
+│   ├── controllers/     (Business logic)
+│   ├── middleware/      (Auth and validation)
+│   ├── routes/          (API endpoints)
+│   └── server.js        (Main server file)
+├── database/            (SQL files)
+├── frontend/            (React app)
 │   └── src/
-│       ├── components/
-│       │   ├── admin/            # Admin components
-│       │   ├── auth/             # Auth components
-│       │   ├── storeOwner/       # Store owner components
-│       │   ├── user/             # User components
-│       │   └── ProtectedRoute.js
-│       ├── context/
-│       │   └── AuthContext.js    # Auth state management
-│       ├── services/
-│       │   └── api.js            # API service layer
-│       ├── App.js                # Main app component
-│       └── index.js              # Entry point
-├── .env.example                  # Environment template
-├── .gitignore                    # Git ignore rules
-├── package.json                  # Backend dependencies
-├── README.md                     # This file
-├── SETUP_GUIDE.md                # Quick setup guide
-└── PROJECT_SUMMARY.md            # Detailed project info
+│       ├── components/  (All React components)
+│       ├── context/     (State management)
+│       └── services/    (API calls)
+├── .env.example         (Environment template)
+└── README.md           (You are here)
 ```
-
----
-
-## 🧪 Testing
-
-### Manual Testing Checklist
-
-- [ ] User registration with validation
-- [ ] Login with different roles
-- [ ] Admin create user/store
-- [ ] User submit/update ratings
-- [ ] Store owner view ratings
-- [ ] Search and filter functionality
-- [ ] Sorting on all tables
-- [ ] Form validation errors
-- [ ] Authentication flow
-- [ ] Unauthorized access attempts
-
-### Run Tests (Future Implementation)
-
-```bash
-# Backend tests
-npm test
-
-# Frontend tests
-cd frontend
-npm test
-```
-
----
-
-## 🚀 Deployment
-
-### Backend Deployment (Heroku Example)
-
-```bash
-# Install Heroku CLI
-# Login to Heroku
-heroku login
-
-# Create app
-heroku create shop-feedback-hub-api
-
-# Add MySQL addon
-heroku addons:create cleardb:ignite
-
-# Set environment variables
-heroku config:set NODE_ENV=production
-heroku config:set JWT_SECRET=your_secret_here
-
-# Deploy
-git push heroku main
-```
-
-### Frontend Deployment (Vercel Example)
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-cd frontend
-vercel --prod
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are always welcome! Here's how you can help:
-
-### Ways to Contribute
-
-1. 🐛 **Report Bugs**
-2. 💡 **Suggest Features**
-3. 📝 **Improve Documentation**
-4. 🔧 **Submit Pull Requests**
-
-### Development Process
-
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. **Commit your changes**
-   ```bash
-   git commit -m "Add some AmazingFeature"
-   ```
-4. **Push to the branch**
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. **Open a Pull Request**
-
-### Code Style Guidelines
-
-- Use ESLint for JavaScript
-- Follow React best practices
-- Write meaningful commit messages
-- Add comments for complex logic
-- Update documentation for new features
-
----
-
-## 🐛 Known Issues
-
-- ESLint warnings for React hooks dependencies (non-breaking)
-- Some deprecation warnings from react-scripts (harmless)
-
----
-
-## 📝 Future Enhancements
-
-- [ ] Email verification for registration
-- [ ] Forgot password functionality
-- [ ] Store image uploads
-- [ ] Rating comments/reviews
-- [ ] Advanced analytics and reports
-- [ ] Export data to CSV/PDF
-- [ ] Real-time notifications
-- [ ] Mobile app version
-- [ ] Multi-language support
-- [ ] Social media integration
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 Akshat Soni
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-```
-
----
-
-## 👨‍💻 Author
-
-**Akshat Soni**
-
-- GitHub: [@akshatsoni123](https://github.com/akshatsoni123)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
-
----
-
-## 🙏 Acknowledgments
-
-- [Express.js](https://expressjs.com/) - Web framework
-- [React](https://reactjs.org/) - Frontend library
-- [MySQL](https://www.mysql.com/) - Database
-- [JWT](https://jwt.io/) - Authentication
-- [bcrypt](https://github.com/kelektiv/node.bcrypt.js) - Password hashing
-
----
-
-## 📞 Support
-
-Need help? Have questions?
-
-- 📧 **Email**: your.email@example.com
-- 💬 **Issues**: [GitHub Issues](https://github.com/akshatsoni123/Shop-Feedback-Hub/issues)
-- 📖 **Documentation**: [Wiki](https://github.com/akshatsoni123/Shop-Feedback-Hub/wiki)
-
----
-
-## ⭐ Show Your Support
-
-Give a ⭐️ if this project helped you!
-
-<div align="center">
-
-### Made with ❤️ by Akshat Soni
-
-**[⬆ Back to Top](#-shop-feedback-hub)**
-
-</div>
